@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #18181B;
+}
+ 
+section{
+    min-height: 20vh;
+    padding: 10rem 9% 10rem;
+}
+
+img{
+    width: 300px;
+}
+ 
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+ 
+.container{
+    width: 1800px;
+    margin-left: 50px;
+}
+
+h1{
+    color: #0044ff;
+    font-size: 500%;
+    font-family: "Poppins", sans-serif;
+}
+ 
+hr{
+    opacity: 30%;
+    color: red;
+}
+ 
+p{
+    font-size: 110%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+ 
+h2{
+    color: #0044ff;
+    font-family: "Poppins", sans-serif;
+}
+ 
+ul li{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+ 
+#foto{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    border-radius: 25%;
+    box-shadow: 0 0 25px #0044ff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 25px #0044ff,
+                0 0 30px #0044ff,
+                0 0 50px #0044ff;
+}
+ 
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+    color: white;
+}
+ 
+span{
+    color: #0044ff;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+}
+
+.botao{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #0044ff;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 110%;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+    
+ 
+.pre-curriculo{
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    color: #0044ff;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 4% 5rem;
+    }
+
+    #foto{
+        margin-left: -20px;
+    }
+
+    .container{
+        width: 390px;
+        margin-left: 5px;
+    }
+
+    .pre-curriculo{
+        font-size: 180%;
+        margin-bottom: 40px;
+    }
+
+    .sobre{
+        width: 350px;
+    }
+}

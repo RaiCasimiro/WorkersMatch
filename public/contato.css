@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background: #101010;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.frase{
+    color: white;
+    margin-left: -525px;
+}
+
+.frase::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0044ff;
+    transition: all 0.3s ease;
+}
+
+.frase:hover::after{
+    width: 70%;
+}
+
+.dropdown {
+    position: relative;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 226px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    color: #0044ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#teste
+{
+    font-weight: 700;
+    color: white;
+    font-size: 4.15rem;
+    letter-spacing: -7px;
+}
+
+ 
+.nav-logo{
+    max-width: 100px;
+}
+
+/* .nav-logo h1{
+    
+} */
+
+.nav-links a{
+    font-size: 16px;
+}
+ 
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+ 
+.link a{
+    /* position: relative; */
+    padding-bottom: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: -600px;
+}
+ 
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0044ff;
+    transition: all 0.3s ease;
+}
+ 
+.link a:hover::after{
+    width: 70%;
+}
+
+#link1{
+    margin-left: 40px;
+}
+
+
+section{
+    padding: 40px 15%;
+    margin-top: -150px;
+}
+
+.contact{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 5rem
+}
+
+.inicio-img{
+    border-radius: 50%;
+}
+ 
+.inicio-img img{
+    margin-left: 8rem;
+    margin-bottom: 11rem;
+    position: relative;
+    top: 3rem;
+    width: 25vw;
+    border-radius: 25%;
+    box-shadow: 0 0 25px #0044ff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+ 
+.inicio-img img:hover{
+    box-shadow: 0 0 25px #0044ff,
+                0 0 30px #0044ff,
+                0 0 50px #0044ff;
+}
+
+.contact-form h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+span{
+    color: #0044ff;
+}
+
+.contact-form p {
+    color: #ffffffbf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .btn{
+    display: inline-block;
+    background: #0026ff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contact-form form .btn:hover{
+    border: 2px solid #0044ff;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+@media(max-width: 1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 50px;
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+
+    .inicio-img img{
+        margin-top: 8rem;
+    }
+}
+@media(max-width: 1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+
+    .inicio-img img{
+        margin-top: 8rem;
+    }
+    
+}
+
+@media(max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+
+    .inicio-img img{
+        display: none;
+    }
+    
+}
