@@ -166,7 +166,7 @@ nav{
 }
 
 .box{
-    background-color: #0044ff;
+    background-color: #022a99;
     height: 250px;
     border-radius: 3rem;
     cursor: pointer;
@@ -174,7 +174,7 @@ nav{
 }
 
 .box:hover{
-    background: #ffffff;
+    background: #ffffffa9;
     color: #0044ff;
     transform: scale(1.03);
     font-family: "Poppins", sans-serif;
@@ -212,7 +212,7 @@ nav{
 
 button{
     margin-top: 50px;
-    margin-left: 480px;
+    margin-left: 350px;
     width: 150px;
     height: 50px;
     background-color: #0044ff;
@@ -259,6 +259,8 @@ textarea{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-left: -450px;
 }
 
 .maiores{

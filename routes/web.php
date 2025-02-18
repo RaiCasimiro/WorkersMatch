@@ -37,7 +37,7 @@ Route::get('/vagas', function(){
     return view('vagas');
 });
 
-Route::get('/perfilUsuario/MinhasVagas', function(){
+Route::get('/wm/minhasVagas', function(){
     return view('minhasvagas');
 });
 
@@ -65,13 +65,17 @@ Route::get('/inicial/TermosECondicoes', function(){
     return view('termosECond');
 });
 
-Route::get('/perfilUsuario/Configuracoes', function(){
+Route::get('/wm/Configuracoes', function(){
     return view('configuracoes');
 });
 
 
 Route::get('/montarCurriculo', function(){
     return view('montarCurriculo');
+});
+
+Route::get('/wm/perfil', function(){
+    return view('perfil');
 });
 
 
@@ -104,12 +108,16 @@ Route::get('/inicial/tutorial', function(){
     return view('tutorial');
 });
 
-Route::get('/cadastroLogin', function(){
+Route::get('/inicial/cadastroLogin', function(){
     return view('cadastroLogin');
 });
 
-Route::get('/configuracoes/editarPerfil', function(){
+Route::get('/wm/configuracoes/editarPerfil', function(){
     return view('editarPerfil');
+});
+
+Route::get('/vagas', function(){
+    return view('vagas');
 });
 
 

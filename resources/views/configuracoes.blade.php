@@ -43,7 +43,7 @@
 
 <div class="opcoes">
 
-    <a class="linha" href="/configuracoes/editarPerfil"><i class="fa-solid fa-pen-to-square"></i>Editar Perfil</a>
+    <a class="linha" href="/wm/configuracoes/editarPerfil"><i class="fa-solid fa-pen-to-square"></i>Editar Perfil</a>
     <hr>
 
     <a class="linha" href="" id="changePasswordLink"><i class="fa-solid fa-lock"></i>Alterar Senha</a>

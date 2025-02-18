@@ -7,6 +7,22 @@
     <title>Perfil do usuário</title>
 </head>
 <body>
+
+    <nav>
+        <a href="/inicial" id="teste">Workers</a>
+        <ul class="nav-links">
+            <li class="link"><a href="/inicial">Inicio</a></li>
+            <li id="link1" class="link"><a href="#">Recursos</a></li>
+            <li id="link3" class="dropdown">
+                <a class="frase" href="#">Segurança</a>
+                <div class="dropdown-content">
+                    <a href="/regrasdacomunidade/regrasComunidade">Regras da Comunidade</a>
+                    <a href="/dicasdeseguranca/dicasDeSeguranca">Dicas de Segurança</a>
+                    <a href="/segurancaDenuncia/segurancaDenuncia">Segurança e Denúncia</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
  
     <section class="home">
  
@@ -32,28 +48,28 @@
             <p>{{ $usuario[0]->sobre }}</p>
         </div>
            
-        <hr>
+        <br><hr>
        
         <div class="cursos">
             <h2>Cursos</h2>
-            <p>{{ $usuario[0]->cursos }}</p>
+            <p>{{ $usuario[0]->curso }}</p>
         </div>
            
-        <hr>
+        <br><hr>
        
         <div class="formacoes">
             <h2>Formações</h2>
             <p>{{ $usuario[0]->formacoes }}</p>
         </div>
  
-        <hr>
+        <br><hr>
        
         <div class="experiencia">
             <h2>Experiências anteriores</h2>
             <p>{{ $usuario[0]->experiencias }}</p>
         </div>
        
-        <hr>
+        <br><hr>
    
         <div class="contatos">
             <h2>Contatos</h2>
@@ -64,7 +80,7 @@
             </ul>
         </div>
 
-        <hr>
+        <br><hr>
  
     </div>
 

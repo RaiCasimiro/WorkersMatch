@@ -18,7 +18,7 @@
         </div>
  
         <ul class="nav-links">
-            <li class="link"><a href="#">Inicio</a></li>
+            <li class="link"><a href="/inicial">Inicio</a></li>
             <li id="link1" class="link"><a href="#">Recursos</a></li>
             <li id="link3" class="dropdown">
                     <a class="frase" href="#">Segurança</a>

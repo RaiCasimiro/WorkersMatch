@@ -60,7 +60,7 @@
 
         <div class="importantes">
 
-            <div class="contato">
+            <div class="sobre">
                 <h3 class="maiores"><span>Adicione</span> um novo contato</h3>
                 <input type="text" placeholder="Novo contato" id="input" required>
             </div>

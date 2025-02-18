@@ -48,7 +48,7 @@
         </div>
  
         <div class="inicio-img">
-            <img src="../image/teste.jpg">
+            <img src="../image/Tecnologia2.jpg">
         </div>
     </section>
 

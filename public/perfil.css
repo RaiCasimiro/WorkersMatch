@@ -4,9 +4,15 @@ body{
     background-color: #18181B;
 }
  
+html{
+    width: 100%;
+}
+
+
 section{
     min-height: 20vh;
     padding: 10rem 9% 10rem;
+    margin-top: -200px;
 }
 
 img{
@@ -18,6 +24,7 @@ img{
     justify-content: center;
     align-items: center;
     gap: 15rem;
+    /* margin-top: -50px; */
 }
  
 .container{
@@ -33,7 +40,7 @@ h1{
  
 hr{
     opacity: 30%;
-    color: red;
+    /* color: red; */
 }
  
 p{
@@ -45,6 +52,7 @@ p{
 h2{
     color: #0044ff;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
  
 ul li{
@@ -113,9 +121,140 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 250%;
-    color: #0044ff;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
+
+
+
+
+/* HEADER */
+nav{
+    max-width: 1200px;
+    margin-top: -65px;
+    margin-left: 120px;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.frase{
+    color: white;
+}
+
+.frase::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0044ff;
+    transition: all 0.3s ease;
+}
+
+.frase:hover::after{
+    width: 70%;
+}
+
+.dropdown {
+    position: relative;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 226px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    color: #0044ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#teste {
+    font-weight: 700;
+    color: white;
+    font-size: 4.15rem;
+    letter-spacing: -7px;
+    text-decoration: none !important;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+#teste:hover {
+    text-decoration: none !important;
+}
+ 
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links a{
+    font-size: 16px;
+    /* margin-left: -150px; */
+}
+ 
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-links li a{
+    margin-left: -480px;
+}
+
+.nav-links li{
+    margin-right: 50px;
+    margin-top: 60px;
+}
+ 
+.link a{
+    position: relative; 
+    padding-bottom: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+ 
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0044ff;
+    transition: all 0.3s ease;
+}
+ 
+.link a:hover::after{
+    width: 70%;
+}
+ #link3 a{
+    text-decoration: none!important;
+ }
+
+ #link1 a{
+    margin-right: 450px;
+ }
+
 
 
 

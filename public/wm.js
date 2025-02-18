@@ -1,5 +1,5 @@
 //CARDS
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     const carouselContainer = document.querySelector('.carousel-container');
     const prevButton = document.getElementById('prevButton');
     const nextButton = document.getElementById('nextButton');
@@ -96,3 +96,54 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+
+
+
+  //LER MAIS
+// LER MAIS
+var lerMaisModal = document.getElementById("lerMaisModal");
+var overlay = document.getElementById("overlay"); // Obtendo o elemento de overlay
+
+// Obter os links que abrem os modais
+var lerMaisLink = document.getElementById("lerMaisLink", "lerMaisLink1", "lerMaisLink2");
+// var lerMaisLink = document.getElementById("lerMaisLink1");
+
+// Obter os spans de fechar
+var closeButtons = document.querySelectorAll(".close");
+
+// Função para abrir o modal
+lerMaisLink.onclick = function(event) {
+  event.preventDefault(); // Evitar a ação padrão do link
+  lerMaisModal.style.display = "block";
+  overlay.style.display = "block"; // Exibe o fundo escuro
+}
+
+// lerMaisLink1.onclick = function(event) {
+//   event.preventDefault(); // Evitar a ação padrão do link
+//   lerMaisModal.style.display = "block";
+//   overlay.style.display = "block"; // Exibe o fundo escuro
+// }
+
+// lerMaisLink2.onclick = function(event) {
+//   event.preventDefault(); // Evitar a ação padrão do link
+//   lerMaisModal.style.display = "block";
+//   overlay.style.display = "block"; // Exibe o fundo escuro
+// }
+
+// Função para fechar os modais ao clicar no botão de fechar (×)
+closeButtons.forEach(function(button) {
+  button.onclick = function() {
+    lerMaisModal.style.display = "none";
+    overlay.style.display = "none"; // Oculta o fundo escuro
+  }
+});
+
+// Função para fechar os modais ao clicar fora deles
+window.onclick = function(event) {
+  if (event.target == lerMaisModal || event.target == overlay) {
+    lerMaisModal.style.display = "none";
+    overlay.style.display = "none"; // Oculta o fundo escuro
+  }
+}
+
+
